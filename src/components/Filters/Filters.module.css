@@ -1,0 +1,179 @@
+.filters {
+  width: 320px;
+  padding: 24px;
+
+  border-radius: 16px;
+  background-color: #f7f7f7;
+}
+
+.locationLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 32px;
+
+  color: #6c717b;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.locationField {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.locationIcon {
+  margin-right: 8px;
+  color: #475467;
+  font-size: 14px;
+}
+.locationIcon {
+  flex-shrink: 0;
+  margin-right: 8px;
+  color: #475467;
+}
+
+.input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: #101828;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: #6c717b;
+}
+
+.title {
+  margin-bottom: 28px;
+
+  color: #101828;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 0 0 28px;
+  padding: 0;
+
+  border: none;
+}
+
+.legend {
+  margin-bottom: 12px;
+
+  color: #6c717b;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #101828;
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.customRadio {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  border: 1px solid #475467;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.radio:checked + .customRadio::after {
+  content: "";
+
+  position: absolute;
+  inset: 4px;
+
+  border-radius: 50%;
+  background-color: #475467;
+}
+
+.radio:focus-visible + .customRadio {
+  outline: 2px solid #829b91;
+  outline-offset: 2px;
+}
+
+.search,
+.clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 56px;
+
+  border-radius: 200px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.search {
+  margin-top: 8px;
+
+  border: none;
+  background-color: #829b91;
+  color: #ffffff;
+}
+
+.search:hover,
+.search:focus {
+  background-color: #6d7b75;
+}
+
+.clear {
+  gap: 8px;
+  margin-top: 12px;
+
+  border: 1px solid #dadde1;
+  background-color: #ffffff;
+  color: #101828;
+}
+
+.clear:hover,
+.clear:focus {
+  border-color: #829b91;
+}

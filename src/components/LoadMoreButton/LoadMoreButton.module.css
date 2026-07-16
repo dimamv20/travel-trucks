@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 145px;
+  height: 56px;
+  margin: 40px auto 0;
+
+  border: 1px solid #dadde1;
+  border-radius: 200px;
+  background-color: #ffffff;
+  color: #101828;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  cursor: pointer;
+
+  transition:
+    border-color 200ms ease,
+    color 200ms ease;
+}
+
+.button:hover,
+.button:focus {
+  border-color: #829b91;
+  color: #6d7b75;
+}

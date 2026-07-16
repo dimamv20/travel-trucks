@@ -1,0 +1,41 @@
+.page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 64px 80px;
+}
+
+.title {
+  margin-bottom: 32px;
+
+  color: #101828;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  align-items: start;
+  gap: 64px;
+}
+
+.results {
+  position: relative;
+  min-width: 0;
+  min-height: 680px;
+}
+
+.error,
+.empty {
+  padding: 32px;
+
+  border: 1px solid #dadde1;
+  border-radius: 16px;
+
+  color: #475467;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}

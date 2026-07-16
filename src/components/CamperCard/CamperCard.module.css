@@ -1,0 +1,178 @@
+.card {
+  display: flex;
+  gap: 24px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+
+  border: 1px solid #dadde1;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.image {
+  width: 292px;
+  height: 320px;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.name {
+  color: #101828;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.price {
+  color: #101828;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.favorite {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #101828;
+
+  font-size: 30px;
+  line-height: 1;
+
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.favorite:hover,
+.favorite:focus {
+  transform: scale(1.08);
+}
+
+.favoriteActive {
+  color: #e44848;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+
+  color: #101828;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.rating,
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.star {
+  color: #ffc531;
+}
+
+.location {
+  white-space: nowrap;
+}
+
+.description {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 24px;
+
+  color: #475467;
+  font-size: 16px;
+  line-height: 1.5;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  border-radius: 100px;
+  background-color: #f2f4f7;
+  color: #101828;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.button {
+  display: inline-flex;
+  width: 166px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: auto;
+
+  border-radius: 200px;
+  background-color: #829b91;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  transition: background-color 200ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #6d7b75;
+}
